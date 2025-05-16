@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - 4 Simple Technique</title>
+
+    <!-- Meta Tags for SEO and Social Media -->
+    <meta name="description" content="Privacy policy for 4 Simple Technique. Learn how we protect your data and respect your privacy.">
+    <meta name="keywords" content="privacy policy, data protection, 4 Simple Technique, online tools">
+    <meta name="author" content="Oussama Achouri">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Privacy Policy – 4 Simple Technique">
+    <meta property="og:description" content="Our commitment to protecting your privacy and keeping your data secure.">
+    <meta property="og:image" content="https://mysecondsite.com/logo.png">
+    <meta property="og:url" content="https://mysecondsite.com/privacy.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Privacy Policy – 4 Simple Technique">
+    <meta name="twitter:description" content="Learn how we keep your data secure and respect your privacy.">
+    <meta name="twitter:image" content="https://mysecondsite.com/logo.png">
+
+    <!-- Link to Favicon -->
+    <link rel="canonical" href="https://mysecondsite.com/privacy.html">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --bg-primary: #f8f9fa;
+            --bg-secondary: #ffffff;
+            --text-primary: #2d3748;
+            --text-secondary: #4a5568;
+            --accent-color: #3b82f6;  
+            --accent-hover: #2563eb;  
+            --border-color: #e9ecef;
+            --soft-shadow: 0 10px 25px rgba(0,0,0,0.05);  
+            --transition-speed: 0.3s;
+            --gradient-bg: linear-gradient(135deg, #f8fafc 0%, #dbeafe 100%);  
+        }
+
+        .dark-theme {
+            --bg-primary: #1a202c;
+            --bg-secondary: #2d3748;
+            --text-primary: #e2e8f0;
+            --text-secondary: #a0aec0;
+            --border-color: #4a5568;
+            --soft-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            --gradient-bg: linear-gradient(135deg, #1a202c 0%, #1e3a8a 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--gradient-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            background-color: var(--bg-secondary);
+            box-shadow: var(--soft-shadow);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .main-nav a {
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .main-nav a:hover, .main-nav a.active {
+            color: var(--accent-color);
+        }
+
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .main-nav a:hover::after, .main-nav a.active::after {
+            width: 100%;
+        }
+
+        .privacy-hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: var(--bg-primary);
+        }
+
+        .privacy-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            line-height: 1.2;
+        }
+
+        .privacy-hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .privacy-content {
+            padding: 80px 0;
+        }
+
+        .privacy-container {
+            background-color: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 60px;
+            box-shadow: var(--soft-shadow);
+            border: 1px solid var(--border-color);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .privacy-section {
+            margin-bottom: 50px;
+        }
+
+        .privacy-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .privacy-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: var(--text-primary);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .privacy-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 3px;
+        }
+
+        .privacy-section h3 {
+            font-size: 1.4rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .privacy-section p, .privacy-section li {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .privacy-section ul, .privacy-section ol {
+            margin-left: 25px;
+            margin-bottom: 25px;
+        }
+
+        .privacy-section ul li, .privacy-section ol li {
+            margin-bottom: 10px;
+        }
+
+        .privacy-section a {
+            color: var(--accent-color);
+            text-decoration: underline;
+            transition: all 0.3s ease;
+        }
+
+        .privacy-section a:hover {
+            color: var(--accent-hover);
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-top: 40px;
+            font-style: italic;
+        }
+
+        .contact-cta {
+            margin-top: 60px;
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+            border-radius: 16px;
+        }
+
+        .contact-cta h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .contact-cta p {
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white !important;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            text-decoration: none !important;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+        }
+
+        .footer {
+            background-color: var(--bg-secondary);
+            padding: 60px 0 20px;
+            border-top: 1px solid var(--border-color);
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo h2 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        .footer-logo p {
+            color: var(--text-secondary);
+        }
+
+        .footer-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 30px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th, table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        table th {
+            background-color: rgba(59, 130, 246, 0.1);
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        table tr:hover {
+            background-color: rgba(59, 130, 246, 0.05);
+        }
+
+        .toc {
+            background-color: rgba(59, 130, 246, 0.05);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .toc h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .toc ol {
+            counter-reset: item;
+            list-style-type: none;
+            margin-left: 10px;
+        }
+        
+        .toc ol li {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .toc ol li:before {
+            content: counters(item, ".") ". ";
+            counter-increment: item;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+        
+        .toc a {
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .main-nav ul {
+                gap: 15px;
+            }
+            
+            .privacy-hero h1 {
+                font-size: 2.3rem;
+            }
+            
+            .privacy-container {
+                padding: 40px 30px;
+            }
+            
+            .privacy-section h2 {
+                font-size: 1.6rem;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            
+            .footer-links {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .privacy-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .privacy-container {
+                padding: 30px 20px;
+            }
+            
+            .privacy-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .privacy-section h3 {
+                font-size: 1.3rem;
+            }
+            
+            .privacy-section p, .privacy-section li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>4 Simple Technique</h1></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="privacy.html" class="active">Privacy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="privacy-hero">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p>We take your privacy seriously. This policy explains how we collect, use, and protect your information when you use our tools and services.</p>
+        </div>
+    </section>
+
+    <section class="privacy-content">
+        <div class="container">
+            <div class="privacy-container">
+                <div class="toc">
+                    <h3>Table of Contents</h3>
+                    <ol>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#information-collection">Information We Collect</a></li>
+                        <li><a href="#usage">How We Use Your Information</a></li>
+                        <li><a href="#data-security">Data Security</a></li>
+                        <li><a href="#cookies">Cookies and Similar Technologies</a></li>
+                        <li><a href="#third-parties">Third-Party Services</a></li>
+                        <li><a href="#your-rights">Your Rights and Choices</a></li>
+                        <li><a href="#children">Children's Privacy</a></li>
+                        <li><a href="#changes">Changes to This Privacy Policy</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ol>
+                </div>
+
+                <div id="overview" class="privacy-section">
+                    <h2>1. Overview</h2>
+                    <p>Welcome to 4 Simple Technique. We've created this privacy policy to explain how we collect, use, disclose, and protect your information when you visit our website or use our online tools.</p>
+                    <p>At 4 Simple Technique, we prioritize your privacy by designing our tools to process data directly in your browser whenever possible. This approach minimizes the need to transmit your data to our servers.</p>
+                    <p>By using our website and tools, you agree to the collection and use of information in accordance with this policy. If you disagree with any part of this policy, please refrain from using our services.</p>
+                </div>
+
+                <div id="information-collection" class="privacy-section">
+                    <h2>2. Information We Collect</h2>
+                    
+                    <h3>2.1 Information You Provide to Us</h3>
+                    <p>Most of our tools operate directly in your browser and do not require you to provide any personal information. However, there are certain circumstances where you may voluntarily provide information to us:</p>
+                    <ul>
+                        <li><strong>Contact Information:</strong> When you contact us through our contact form, we collect your name, email address, and any other information you choose to provide in your message.</li>
+                        <li><strong>Feedback and Suggestions:</strong> If you provide feedback or suggestions about our tools or services.</li>
+                        <li><strong>Tool Input Data:</strong> The data you input into our tools (such as text to format, numbers to calculate, etc.). In most cases, this data is processed locally in your browser and is not transmitted to our servers.</li>
+                    </ul>
+
+                    <h3>2.2 Information Collected Automatically</h3>
+                    <p>When you visit our website, certain information may be collected automatically, including:</p>
+                    <ul>
+                        <li><strong>Usage Data:</strong> Information about how you interact with our website, such as the pages you visit, the time and date of your visit, the time spent on those pages, and other diagnostic data.</li>
+                        <li><strong>Device Information:</strong> Information about your device, including your browser type and version, operating system, and screen resolution.</li>
+                        <li><strong>IP Address:</strong> Your IP address, which may be used for security purposes and to generate aggregate, non-identifying information about how our website is used.</li>
+                    </ul>
+                </div>
+
+                <div id="usage" class="privacy-section">
+                    <h2>3. How We Use Your Information</h2>
+                    <p>We use the information we collect for various purposes, including:</p>
+                    <ul>
+                        <li><strong>Providing and Maintaining Our Services:</strong> To deliver the features and functionality of our website and tools.</li>
+                        <li><strong>Improving Our Services:</strong> To understand how users interact with our website and tools so we can make them better.</li>
+                        <li><strong>Communicating With You:</strong> To respond to your inquiries, comments, or questions.</li>
+                        <li><strong>Security:</strong> To detect, prevent, and address technical issues or potential security breaches.</li>
+                        <li><strong>Analytics:</strong> To measure the performance of our website and understand user behavior.</li>
+                    </ul>
+
+                    <h3>3.1 Data Retention</h3>
+                    <p>We retain user-provided information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy. For example, contact form submissions may be retained until your inquiry is resolved. In most cases, data you input into our tools is only stored temporarily in your browser's local storage and is not retained by us.</p>
+                </div>
+
+                <div id="data-security" class="privacy-section">
+                    <h2>4. Data Security</h2>
+                    <p>The security of your data is important to us. We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+                    <p>Our key security measures include:</p>
+                    <ul>
+                        <li>Processing data in your browser whenever possible to minimize data transmission</li>
+                        <li>Using secure HTTPS connections to encrypt data in transit</li>
+                        <li>Regular security assessments and updates</li>
+                        <li>Limiting access to personal information to authorized personnel only</li>
+                    </ul>
+                    <p>However, please be aware that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.</p>
+                </div>
+
+                <div id="cookies" class="privacy-section">
+                    <h2>5. Cookies and Similar Technologies</h2>
+                    <p>We use cookies and similar tracking technologies to track activity on our website and hold certain information. Cookies are files with a small amount of data that may include an anonymous unique identifier.</p>
+                    
+                    <h3>5.1 Types of Cookies We Use</h3>
+                    <ul>
+                        <li><strong>Essential Cookies:</strong> Necessary for the website to function properly.</li>
+                        <li><strong>Preference Cookies:</strong> Remember your preferences and settings.</li>
+                        <li><strong>Analytics Cookies:</strong> Help us understand how visitors interact with our website.</li>
+                    </ul>
+
+                    <h3>5.2 Your Cookie Choices</h3>
+                    <p>Most web browsers allow you to control cookies through their settings preferences. However, if you limit the ability of websites to set cookies, you may worsen your overall user experience, as it may no longer be personalized to you. It may also stop you from saving customized settings like login information.</p>
+                </div>
+
+                <div id="third-parties" class="privacy-section">
+                    <h2>6. Third-Party Services</h2>
+                    <p>Our website may include links to third-party websites, plug-ins, and applications. Clicking on those links or enabling those connections may allow third parties to collect or share data about you. We do not control these third-party websites and are not responsible for their privacy statements. We encourage you to read the privacy policy of every website you visit.</p>
+                    
+                    <h3>6.1 Analytics Providers</h3>
+                    <p>We may use third-party analytics providers, such as Google Analytics, to help us understand how users interact with our website. These services collect information about your use of our website and may use cookies or similar technologies to do so. The information generated about your use of our website (including your IP address) may be transmitted to and stored by these providers on servers in countries outside your own.</p>
+                    
+                    <h3>6.2 Content Delivery Networks (CDNs)</h3>
+                    <p>We may use CDNs to deliver content such as scripts, fonts, and stylesheets more efficiently. These services may collect technical information such as your IP address, browser type, and the page you're visiting.</p>
+                </div>
+
+                <div id="your-rights" class="privacy-section">
+                    <h2>7. Your Rights and Choices</h2>
+                    <p>Depending on your location, you may have certain rights regarding your personal information, including:</p>
+                    <ul>
+                        <li><strong>Access:</strong> You have the right to request copies of your personal information.</li>
+                        <li><strong>Rectification:</strong> You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete.</li>
+                        <li><strong>Erasure:</strong> You have the right to request that we erase your personal information under certain conditions.</li>
+                        <li><strong>Restrict Processing:</strong> You have the right to request that we restrict the processing of your personal information under certain conditions.</li>
+                        <li><strong>Object to Processing:</strong> You have the right to object to our processing of your personal information under certain conditions.</li>
+                        <li><strong>Data Portability:</strong> You have the right to request that we transfer the data we have collected to another organization or directly to you under certain conditions.</li>
+                    </ul>
+                    <p>If you wish to exercise any of these rights, please contact us using the information in the "Contact Us" section.</p>
+                </div>
+
+                <div id="children" class="privacy-section">
+                    <h2>8. Children's Privacy</h2>
+                    <p>Our services are not intended for use by children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we can take necessary actions.</p>
+                </div>
+
+                <div id="changes" class="privacy-section">
+                    <h2>9. Changes to This Privacy Policy</h2>
+                    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+                    <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+                </div>
+
+                <div id="contact" class="privacy-section">
+                    <h2>10. Contact Us</h2>
+                    <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+                    <ul>
+                        <li>By email: privacy@4simpletechnique.com</li>
+                        <li>By visiting our contact page: <a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                    <div class="contact-cta">
+                        <h3>Have Questions About Our Privacy Practices?</h3>
+                        <p>We're committed to transparency and are happy to answer any questions you may have about how we handle your information.</p>
+                        <a href="contact.html" class="cta-btn">Contact Us</a>
+                    </div>
+                </div>
+
+                <p class="last-updated">Last Updated: November 15, 2023</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>4 Simple Technique</h2>
+                    <p>Helpful resources for your everyday needs</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 4 Simple Technique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add animation to sections when they come into view
+            const sections = document.querySelectorAll('.privacy-section');
+            
+            function checkScroll() {
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (sectionTop < windowHeight * 0.75) {
+                        section.style.opacity = '1';
+                        section.style.transform = 'translateY(0)';
+                    }
+                });
+            }
+            
+            // Initial styles for animation
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            // Check positions on load and scroll
+            window.addEventListener('load', checkScroll);
+            window.addEventListener('scroll', checkScroll);
+            
+            // Simple dark mode toggle (can be expanded)
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+            
+            // Check if user has previously set a theme preference
+            const savedTheme = localStorage.getItem('theme');
+            
+            if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
+                document.body.classList.add('dark-theme');
+            }
+        });
+    </script>
+</body>
+</html>

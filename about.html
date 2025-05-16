@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - 4 Simple Technique</title>
+
+    <!-- Meta Tags for SEO and Social Media -->
+    <meta name="description" content="Learn more about 4 Simple Technique and our mission to provide free, simple online tools.">
+    <meta name="keywords" content="about us, 4 Simple Technique, online tools, web utilities">
+    <meta name="author" content="Oussama Achouri">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="About – 4 Simple Technique">
+    <meta property="og:description" content="Learn more about our mission and the team behind 4 Simple Technique.">
+    <meta property="og:image" content="https://mysecondsite.com/logo.png">
+    <meta property="og:url" content="https://mysecondsite.com/about.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About – 4 Simple Technique">
+    <meta name="twitter:description" content="Discover the story behind our collection of helpful online tools.">
+    <meta name="twitter:image" content="https://mysecondsite.com/logo.png">
+
+    <!-- Link to Favicon -->
+    <link rel="canonical" href="https://mysecondsite.com/about.html">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --bg-primary: #f8f9fa;
+            --bg-secondary: #ffffff;
+            --text-primary: #2d3748;
+            --text-secondary: #4a5568;
+            --accent-color: #3b82f6;  
+            --accent-hover: #2563eb;  
+            --border-color: #e9ecef;
+            --soft-shadow: 0 10px 25px rgba(0,0,0,0.05);  
+            --transition-speed: 0.3s;
+            --gradient-bg: linear-gradient(135deg, #f8fafc 0%, #dbeafe 100%);  
+        }
+
+        .dark-theme {
+            --bg-primary: #1a202c;
+            --bg-secondary: #2d3748;
+            --text-primary: #e2e8f0;
+            --text-secondary: #a0aec0;
+            --border-color: #4a5568;
+            --soft-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            --gradient-bg: linear-gradient(135deg, #1a202c 0%, #1e3a8a 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--gradient-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            background-color: var(--bg-secondary);
+            box-shadow: var(--soft-shadow);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .main-nav a {
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .main-nav a:hover, .main-nav a.active {
+            color: var(--accent-color);
+        }
+
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .main-nav a:hover::after, .main-nav a.active::after {
+            width: 100%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: var(--text-primary);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 3px;
+        }
+
+        .about-hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: var(--bg-primary);
+        }
+
+        .about-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            line-height: 1.2;
+        }
+
+        .about-hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about-section {
+            padding: 80px 0;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--soft-shadow);
+            position: relative;
+            height: 400px;
+            background-color: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .team-section {
+            padding: 80px 0;
+            background-color: var(--bg-primary);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .team-member {
+            background-color: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: var(--soft-shadow);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            background-color: var(--bg-primary);
+        }
+
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .team-member p.role {
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .team-member p.bio {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .values-section {
+            padding: 80px 0;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .value-card {
+            background-color: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: var(--soft-shadow);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            background: linear-gradient(to bottom, var(--bg-secondary), rgba(59, 130, 246, 0.05));
+        }
+
+        .value-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .value-card h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 3px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .value-card:hover h3::after {
+            width: 60px;
+        }
+
+        .value-card p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .cta-section {
+            padding: 100px 0;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+            margin: 60px 0;
+            border-radius: 20px;
+        }
+
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .cta-content p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+        }
+
+        .footer {
+            background-color: var(--bg-secondary);
+            padding: 60px 0 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo h2 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        .footer-logo p {
+            color: var(--text-secondary);
+        }
+
+        .footer-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 992px) {
+            .about-content,
+            .team-grid,
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .main-nav ul {
+                gap: 15px;
+            }
+            
+            .about-hero h1 {
+                font-size: 2.3rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .about-image {
+                grid-row: 1;
+                height: 300px;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            
+            .footer-links {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .team-grid,
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.7rem;
+            }
+            
+            .about-text h2 {
+                font-size: 1.8rem;
+            }
+            
+            .cta-content h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>4 Simple Technique</h1></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1>About 4 Simple Technique</h1>
+            <p>We're passionate about creating simple, effective online tools that make your digital life easier. Learn more about our mission, our team, and the values that drive everything we do.</p>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2022, 4 Simple Technique began with a simple idea: to create web tools that are truly accessible to everyone. We noticed that many online utilities were either too complex, loaded with ads, or required personal information to use.</p>
+                    <p>Our founder, Oussama Achouri, started building simple web utilities for his own use and soon realized these tools could help many others facing similar challenges. What started as a personal project quickly grew into a platform with thousands of daily users.</p>
+                    <p>Today, our small team continues to develop and refine our collection of web tools with one goal in mind - to make digital tasks simpler and more accessible for everyone around the world.</p>
+                </div>
+                <div class="about-image">
+                    <h2>4 Simple Technique</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title">Our Core Values</h2>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Simplicity</h3>
+                    <p>We believe the best tools are those you can use without reading a manual. We focus on creating intuitive interfaces that anyone can use immediately.</p>
+                </div>
+                
+                <div class="value-card">
+                    <h3>Accessibility</h3>
+                    <p>Our tools are designed to be accessible to everyone, regardless of technical expertise, device type, or location. We're committed to breaking down barriers.</p>
+                </div>
+                
+                <div class="value-card">
+                    <h3>Privacy</h3>
+                    <p>We respect your privacy. Our tools process data in your browser whenever possible, and we don't collect unnecessary personal information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-photo"></div>
+                    <h3>Oussama Achouri</h3>
+                    <p class="role">Founder & Lead Developer</p>
+                    <p class="bio">With over 10 years of web development experience, Oussama leads our technical development and sets the vision for our platform.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="team-photo"></div>
+                    <h3>Sarah Johnson</h3>
+                    <p class="role">UX Designer</p>
+                    <p class="bio">Sarah ensures our tools are not just functional but also delightful to use, with a focus on simplicity and accessibility.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="team-photo"></div>
+                    <h3>David Chen</h3>
+                    <p class="role">Developer</p>
+                    <p class="bio">David brings expertise in performance optimization, ensuring our tools work quickly and efficiently on all devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Have a Tool Suggestion?</h2>
+                <p>We're always looking to expand our collection of tools. If there's something you'd like to see on our platform, we'd love to hear from you!</p>
+                <a href="contact.html" class="cta-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>4 Simple Technique</h2>
+                    <p>Helpful resources for your everyday needs</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 4 Simple Technique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simple animation for team members
+            const teamMembers = document.querySelectorAll('.team-member');
+            
+            teamMembers.forEach((member, index) => {
+                member.style.opacity = '0';
+                member.style.transform = 'translateY(20px)';
+                member.style.transition = 'all 0.4s ease';
+                
+                // Staggered animation
+                setTimeout(() => {
+                    member.style.opacity = '1';
+                    member.style.transform = 'translateY(0)';
+                }, 200 * index);
+            });
+            
+            // Value cards hover effects
+            const valueCards = document.querySelectorAll('.value-card');
+            
+            valueCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transition = 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                });
+            });
+            
+            // Simple dark mode toggle (can be expanded)
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+            
+            // Check if user has previously set a theme preference
+            const savedTheme = localStorage.getItem('theme');
+            
+            if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
+                document.body.classList.add('dark-theme');
+            }
+        });
+    </script>
+</body>
+</html>

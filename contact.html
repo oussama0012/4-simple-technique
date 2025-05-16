@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - 4 Simple Technique</title>
+
+    <!-- Meta Tags for SEO and Social Media -->
+    <meta name="description" content="Get in touch with the team at 4 Simple Technique. We'd love to hear from you!">
+    <meta name="keywords" content="contact us, get in touch, 4 Simple Technique, feedback, support">
+    <meta name="author" content="Oussama Achouri">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Contact Us – 4 Simple Technique">
+    <meta property="og:description" content="Have questions or suggestions? Reach out to our team.">
+    <meta property="og:image" content="https://mysecondsite.com/logo.png">
+    <meta property="og:url" content="https://mysecondsite.com/contact.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us – 4 Simple Technique">
+    <meta name="twitter:description" content="Get in touch with our team easily through our contact form.">
+    <meta name="twitter:image" content="https://mysecondsite.com/logo.png">
+
+    <!-- Link to Favicon -->
+    <link rel="canonical" href="https://mysecondsite.com/contact.html">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --bg-primary: #f8f9fa;
+            --bg-secondary: #ffffff;
+            --text-primary: #2d3748;
+            --text-secondary: #4a5568;
+            --accent-color: #3b82f6;  
+            --accent-hover: #2563eb;  
+            --border-color: #e9ecef;
+            --soft-shadow: 0 10px 25px rgba(0,0,0,0.05);  
+            --transition-speed: 0.3s;
+            --gradient-bg: linear-gradient(135deg, #f8fafc 0%, #dbeafe 100%);
+            --error-color: #e53e3e;
+            --success-color: #38a169;
+        }
+
+        .dark-theme {
+            --bg-primary: #1a202c;
+            --bg-secondary: #2d3748;
+            --text-primary: #e2e8f0;
+            --text-secondary: #a0aec0;
+            --border-color: #4a5568;
+            --soft-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            --gradient-bg: linear-gradient(135deg, #1a202c 0%, #1e3a8a 100%);
+            --error-color: #fc8181;
+            --success-color: #68d391;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--gradient-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            background-color: var(--bg-secondary);
+            box-shadow: var(--soft-shadow);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .main-nav a {
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .main-nav a:hover, .main-nav a.active {
+            color: var(--accent-color);
+        }
+
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .main-nav a:hover::after, .main-nav a.active::after {
+            width: 100%;
+        }
+
+        .contact-hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: var(--bg-primary);
+        }
+
+        .contact-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            line-height: 1.2;
+        }
+
+        .contact-hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-section {
+            padding: 80px 0;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-info {
+            background-color: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 50px;
+            box-shadow: var(--soft-shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-info h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .contact-info h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 3px;
+        }
+
+        .contact-methods {
+            margin-top: 40px;
+        }
+
+        .contact-method {
+            margin-bottom: 30px;
+        }
+
+        .contact-method h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-method p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .contact-method a {
+            color: var(--accent-color);
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        .contact-method a:hover {
+            color: var(--accent-hover);
+        }
+
+        .contact-form {
+            background-color: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 50px;
+            box-shadow: var(--soft-shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-form h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .contact-form h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 3px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+        }
+
+        .form-submit:active {
+            transform: translateY(0);
+        }
+
+        .form-message {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 500;
+            display: none;
+        }
+
+        .form-message.success {
+            background-color: rgba(56, 161, 105, 0.1);
+            color: var(--success-color);
+            border: 1px solid var(--success-color);
+        }
+
+        .form-message.error {
+            background-color: rgba(229, 62, 62, 0.1);
+            color: var(--error-color);
+            border: 1px solid var(--error-color);
+        }
+
+        .faq-section {
+            padding: 80px 0;
+            background-color: var(--bg-primary);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-list {
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            background-color: var(--bg-secondary);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: var(--soft-shadow);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: rgba(59, 130, 246, 0.05);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question {
+            background-color: rgba(59, 130, 246, 0.1);
+            color: var(--accent-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '−';
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 30px 20px;
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .office-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .office-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .office-map {
+            margin-top: 40px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--soft-shadow);
+            border: 1px solid var(--border-color);
+            height: 400px;
+            background-color: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .office-map p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            padding: 0 20px;
+        }
+
+        .form-error {
+            color: var(--error-color);
+            font-size: 0.9rem;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .footer {
+            background-color: var(--bg-secondary);
+            padding: 60px 0 20px;
+            border-top: 1px solid var(--border-color);
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo h2 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        .footer-logo p {
+            color: var(--text-secondary);
+        }
+
+        .footer-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 992px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .contact-info {
+                order: 2;
+            }
+            
+            .contact-form {
+                order: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .main-nav ul {
+                gap: 15px;
+            }
+            
+            .contact-hero h1 {
+                font-size: 2.3rem;
+            }
+            
+            .contact-info, .contact-form {
+                padding: 40px 30px;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            
+            .footer-links {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .contact-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-info, .contact-form {
+                padding: 30px 20px;
+            }
+            
+            .contact-info h2, .contact-form h2 {
+                font-size: 1.7rem;
+            }
+            
+            .form-submit {
+                width: 100%;
+            }
+            
+            .office-map {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>4 Simple Technique</h1></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Have questions, feedback, or suggestions? We'd love to hear from you! Use the form below to get in touch with our team.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                            <div class="form-error" id="nameError">Please enter your name</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                            <div class="form-error" id="emailError">Please enter a valid email address</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                            <div class="form-error" id="subjectError">Please enter a subject</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                            <div class="form-error" id="messageError">Please enter your message</div>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">Send Message</button>
+                        
+                        <div class="form-message success" id="formSuccess">
+                            Your message has been sent successfully. We'll get back to you soon!
+                        </div>
+                        
+                        <div class="form-message error" id="formError">
+                            There was a problem sending your message. Please try again later.
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Feel free to reach out to us through any of the following methods. We aim to respond to all inquiries within 1-2 business days.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <h3>Email Us</h3>
+                            <p>For general inquiries:</p>
+                            <p><a href="mailto:info@4simpletechnique.com">info@4simpletechnique.com</a></p>
+                            <p>For support related questions:</p>
+                            <p><a href="mailto:support@4simpletechnique.com">support@4simpletechnique.com</a></p>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <h3>Call Us</h3>
+                            <p>Monday to Friday, 9am - 5pm EST</p>
+                            <p><a href="tel:+12345678900">+1 (234) 567-8900</a></p>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <h3>Follow Us</h3>
+                            <p>Stay updated with our latest tools and announcements:</p>
+                            <p>
+                                <a href="https://twitter.com/4simpletechnique" target="_blank">Twitter</a> | 
+                                <a href="https://github.com/4simpletechnique" target="_blank">GitHub</a> | 
+                                <a href="https://linkedin.com/company/4simpletechnique" target="_blank">LinkedIn</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">How quickly will I receive a response to my inquiry?</div>
+                        <div class="faq-answer">
+                            <p>We aim to respond to all inquiries within 1-2 business days. For urgent matters, please mention "Urgent" in your subject line and we'll prioritize your message.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">How can I suggest a new tool or feature?</div>
+                        <div class="faq-answer">
+                            <p>We love hearing your ideas! Please use the contact form above and select "Feature Suggestion" as the subject. Be as detailed as possible about what you'd like to see and how it would help you.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Do you offer custom tool development?</div>
+                        <div class="faq-answer">
+                            <p>Yes, we can create custom web tools tailored to your specific needs. Please contact us with details about your requirements, and we'll get back to you with more information about our custom development services.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">I found a bug in one of your tools. How do I report it?</div>
+                        <div class="faq-answer">
+                            <p>We appreciate your help in improving our tools! Please use the contact form and include "Bug Report" in the subject line. Be sure to describe the issue in detail, including which tool you were using, what you expected to happen, and what actually happened. Screenshots are very helpful if possible.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Are your tools free to use for commercial purposes?</div>
+                        <div class="faq-answer">
+                            <p>Yes, all of our publicly available tools are free to use for both personal and commercial purposes. However, if you need high-volume processing or API access, please contact us to discuss our premium options.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="office-section">
+        <div class="container">
+            <div class="office-container">
+                <h2 class="section-title">Our Location</h2>
+                <div class="office-map">
+                    <p>We're a distributed team working remotely across the globe. While we don't have a physical office that you can visit, we're always available online through our contact channels!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>4 Simple Technique</h2>
+                    <p>Helpful resources for your everyday needs</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 4 Simple Technique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Form validation and submission
+            const contactForm = document.getElementById('contactForm');
+            const formSuccess = document.getElementById('formSuccess');
+            const formError = document.getElementById('formError');
+            
+            // Input fields and error messages
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const subjectInput = document.getElementById('subject');
+            const messageInput = document.getElementById('message');
+            
+            const nameError = document.getElementById('nameError');
+            const emailError = document.getElementById('emailError');
+            const subjectError = document.getElementById('subjectError');
+            const messageError = document.getElementById('messageError');
+            
+            // FAQ accordion functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // Form submission
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Reset errors
+                resetErrors();
+                
+                // Validate form
+                let isValid = true;
+                
+                if (!nameInput.value.trim()) {
+                    showError(nameInput, nameError);
+                    isValid = false;
+                }
+                
+                if (!emailInput.value.trim() || !isValidEmail(emailInput.value)) {
+                    showError(emailInput, emailError);
+                    isValid = false;
+                }
+                
+                if (!subjectInput.value.trim()) {
+                    showError(subjectInput, subjectError);
+                    isValid = false;
+                }
+                
+                if (!messageInput.value.trim()) {
+                    showError(messageInput, messageError);
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    // Simulate form submission
+                    // In a real application, you would send the data to a server here
+                    setTimeout(() => {
+                        formSuccess.style.display = 'block';
+                        contactForm.reset();
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(() => {
+                            formSuccess.style.display = 'none';
+                        }, 5000);
+                    }, 1000);
+                }
+            });
+            
+            // Function to validate email format
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+            
+            // Function to show error
+            function showError(input, errorElement) {
+                input.style.borderColor = 'var(--error-color)';
+                errorElement.style.display = 'block';
+            }
+            
+            // Function to reset all errors
+            function resetErrors() {
+                // Hide all error messages
+                const errorElements = document.querySelectorAll('.form-error');
+                errorElements.forEach(element => {
+                    element.style.display = 'none';
+                });
+                
+                // Reset input borders
+                const inputs = contactForm.querySelectorAll('.form-control');
+                inputs.forEach(input => {
+                    input.style.borderColor = 'var(--border-color)';
+                });
+                
+                // Hide form messages
+                formSuccess.style.display = 'none';
+                formError.style.display = 'none';
+            }
+            
+            // Input event listeners to clear errors on typing
+            nameInput.addEventListener('input', () => {
+                nameInput.style.borderColor = 'var(--border-color)';
+                nameError.style.display = 'none';
+            });
+            
+            emailInput.addEventListener('input', () => {
+                emailInput.style.borderColor = 'var(--border-color)';
+                emailError.style.display = 'none';
+            });
+            
+            subjectInput.addEventListener('input', () => {
+                subjectInput.style.borderColor = 'var(--border-color)';
+                subjectError.style.display = 'none';
+            });
+            
+            messageInput.addEventListener('input', () => {
+                messageInput.style.borderColor = 'var(--border-color)';
+                messageError.style.display = 'none';
+            });
+            
+            // Simple dark mode toggle (consistent with other pages)
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+            
+            // Check if user has previously set a theme preference
+            const savedTheme = localStorage.getItem('theme');
+            
+            if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
+                document.body.classList.add('dark-theme');
+            }
+        });
+    </script>
+</body>
+</html>
